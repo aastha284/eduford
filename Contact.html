@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>University Website Design</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/63a86dc5f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="Index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<div class="cross-icon-container">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+				</div>
+				<ul>
+					<li><a href="Index.html">HOME</a></li>
+					<li><a href="About.html">ABOUT</a></li>
+					<li><a href="Course.html">COURSE</a></li>
+					<li><a href="Blog.html">BLOG</a></li>
+					<li><a href="Contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="menu-icon-container">
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</div>
+		</nav>
+		<h1>Contact us</h1>
+	</section>
+
+	<!-- ------------contact-us-------------- -->
+
+	<section class="location">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.88654003857!2d77.49085274762703!3d12.95395998717135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1629037828978!5m2!1sen!2sin"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+	</section>
+
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<span class="home"><i class="fas fa-home"></i></span>
+					<span>
+						<h5>XYZ Road, ABC Building</h5>
+						<p>Banglore, Karnataka, IN</p>
+					</span>
+				</div>
+				<div>
+					<span class="phone"><i class="fas fa-phone"></i></span>
+					<span>
+						<h5>+1 0123456789</h5>
+						<p>Monday to Saturday, 10AM to 6PM</p>
+					</span>
+				</div>
+					<div>
+						<span class="env"><i class="fas fa-envelope"></i></span>
+						<span>
+							<h5>@info@eduform.com</h5>
+							<p>Email us your query</p>
+						</span>
+					</div>
+			</div>
+			<div class="contact-col">
+
+				<form>
+					<input type="text" placeholder="Enter Your Name" required>
+					<input type="email" placeholder="Enter Your Email Address" required>
+					<input type="text" placeholder="Enter Your Subject" required>
+					<textarea rows="8" placeholder="Message" required></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- ------------footer-------------- -->
+	<section class="footer">
+		<h4>About us</h4>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard
+		dummy text ever since the 1500s.</p>
+		<div class="icons">
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-linkedin-in"></i>
+		</div>
+		<p>Made with <span class="icons1"><i class="far fa-heart"></i></span> By Aastha Arora</p>
+	</section>
+
+	<!-- ------Javascript for toggle menu--------- -->
+	<script>
+		var navLinks= document.getElementById("navLinks");
+
+		function hideMenu()
+		{
+			navLinks.style.right = "-200px";
+		}
+
+		function showMenu()
+		{
+			navLinks.style.right="0";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>University Website Design</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/63a86dc5f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="Index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<div class="cross-icon-container">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
+				</div>
+				<ul>
+					<li><a href="Index.html">HOME</a></li>
+					<li><a href="About.html">ABOUT</a></li>
+					<li><a href="Course.html">COURSE</a></li>
+					<li><a href="Blog.html">BLOG</a></li>
+					<li><a href="Contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="menu-icon-container">
+				<i class="fas fa-bars" onclick="showMenu()"></i>
+			</div>
+		</nav>
+		<h1>About us</h1>
+	</section>
+
+	<!-- -----------about us content---------- -->
+
+	<section class="about-us">
+		<div class="row">
+			<div class="about-col">
+				<h1>We are the world's largest university</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+				dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+				book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+				unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+				with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<a href="" class="hero-btn red-btn">Explore Now</a>
+			</div>
+			<div class="about-col">
+				<img src="images/about.jpg">
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ------------footer-------------- -->
+	<section class="footer">
+		<h4>About us</h4>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard
+		dummy text ever since the 1500s.</p>
+		<div class="icons">
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-linkedin-in"></i>
+		</div>
+		<p>Made with <span class="icons1"><i class="far fa-heart"></i></span> By Aastha Arora</p>
+	</section>
+
+	<!-- ------Javascript for toggle menu--------- -->
+	<script>
+		var navLinks= document.getElementById("navLinks");
+
+		function hideMenu()
+		{
+			navLinks.style.right = "-200px";
+		}
+
+		function showMenu()
+		{
+			navLinks.style.right="0";
+		}
+	</script>
+</body>
+</html>
