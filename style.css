@@ -369,6 +369,11 @@ h3 {
   .cta h1 {
     font-size: 24px;
   }
+
+  .footer p {
+    margin: auto;
+    padding: 10px 10px !important;
+  }
 }
 
 /* -----------footer----------- */
